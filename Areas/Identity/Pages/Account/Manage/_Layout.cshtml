@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="offset-1 patitle">Personal area</h2>
+
+<div>
+    <h4 class="offset-1">Change your account settings</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-2 offset-1">
+            <partial name="_ManageNav" />
+        </div>
+        <div class="col-md-8 offset-1">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

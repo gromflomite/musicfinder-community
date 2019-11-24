@@ -1,0 +1,26 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+
+    <h1>Welcome to MFCommunity</h1>
+
+    <h3>Your details have been recorded and now, you are part of the community</h3>
+
+    <a id="confirm-link" href="@Model.EmailConfirmationUrl">Great!!</a>
+</p>
+    }
+    else
+    {
+<p>
+        Please check your email to confirm your account.
+</p>
+    }
+}
