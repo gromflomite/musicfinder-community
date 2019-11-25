@@ -10,7 +10,3 @@ var wavesurfer = WaveSurfer.create({
 });
 
 wavesurfer.load('./media/albums/GES%20-%20Maldito/13.mp3');
-
-wavesurfer.on('ready', function () {
-    wavesurfer.play();
-});
