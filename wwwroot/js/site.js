@@ -2,3 +2,15 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+
+
+var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+});
+
+wavesurfer.load('./media/albums/GES%20-%20Maldito/13.mp3');
+
+wavesurfer.on('ready', function () {
+    wavesurfer.play();
+});

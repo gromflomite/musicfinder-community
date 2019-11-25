@@ -8,6 +8,7 @@ body {
 .title {
   font-family: 'Monoton', cursive;
   margin-top: 3%;
+  color: white;
 }
 
 .navbar {
@@ -36,6 +37,39 @@ body {
 
 .patitle {
   margin-top: 4%;
+}
+
+.covers {
+  max-width: 25%
+}
+
+.upcarousel {
+  text-align: center;
+  margin-top: 5%;  
+  font-family: 'Orbitron', sans-serif;
+}
+
+.getallmusic {
+  font-size: 3vw;
+  margin-bottom: 6%;
+  
+}
+
+.albumscarousel {  
+  width: 50%;
+  margin: auto;  
+  border: 1px solid white;  
+}
+
+.homeaudio {
+  margin-top: 5%;
+  font-family: 'Orbitron', sans-serif;  
+}
+
+.homeaudio p {
+  text-align: center;
+  font-size: 2vw;
+  
 }
 
 /*-------------------------------------------------- */
