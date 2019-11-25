@@ -9,7 +9,8 @@ namespace MFCommunity.Models.ViewModels
     {
         public List<Album> Albums { get; set; }
         public List<Song> Songs { get; set; }
-        
+        public List<Artist> Artists { get; set; }
+
         // For carousel Albums images --------------------------------
         public int carousel1;
         public int carousel2;

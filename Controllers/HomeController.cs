@@ -30,6 +30,8 @@ namespace MFCommunity.Controllers
             {
                 Albums = _context.Albums.Include(a => a.Artist).ToList(), // Adding the artist name from Artist DB --------------------------
                 Songs = _context.Songs.ToList(),
+                Artists = _context.Artists.ToList(),
+
                 
                 // Creating three random numbers to the Albums carousel -------------------------------------------
                 carousel1 = random.Next(0, 3),
