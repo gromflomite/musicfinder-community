@@ -38,11 +38,11 @@
             @foreach (Album album in Model.Albums)
             {
                 <div class="card" style="width: 11rem;">
-                    <img src="~/media/albums/@album.AlbumImage" class="card-img-top" alt="@album.AlbumTitle cover">
-                    <div class="card-body">
-                        <p class="card-text">@album.AlbumTitle</p>
-                    </div>
-                </div>
+                    <a asp-controller="Albums" asp-action="Details" asp-route-id="@album.ID"><img src="~/media/albums/@album.AlbumImage" class="card-img-top" alt="@album.AlbumTitle cover"></a>
+                        <div class="card-body">
+                            <p class="card-text">@album.AlbumTitle</p>
+                        </div>
+</div>
             }
         </div>
     </div>

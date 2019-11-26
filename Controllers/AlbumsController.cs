@@ -35,6 +35,7 @@ namespace MFCommunity.Controllers
             }
 
             var album = await _context.Albums
+                .Include(b => b.Songs) //Returning the Song DB too --------------
                 .Include(a => a.Artist)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (album == null)

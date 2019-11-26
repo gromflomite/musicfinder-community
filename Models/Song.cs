@@ -19,5 +19,9 @@ namespace MFCommunity.Models
         public Album Album { get; set; }
 
         public string? SongComments { get; set; }
+
+
+
+
     }
 }

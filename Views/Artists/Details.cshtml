@@ -19,7 +19,7 @@
 
     @foreach (Album album in Model.Albums)
     {
-        <h3 class="detailsAlbumsName">@album.AlbumTitle</h3>
+        <a asp-controller="Albums" asp-action="Details" asp-route-id="@album.ID"><h3 class="detailsAlbumsName">@album.AlbumTitle</h3></a>
     }
 </div>
 

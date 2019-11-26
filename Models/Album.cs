@@ -27,5 +27,7 @@ namespace MFCommunity.Models
         public string? AlbumImage { get; set; }
 
         public string? AlbumComments { get; set; }
+
+        public List<Song> Songs { get; set; }
     }
 }
