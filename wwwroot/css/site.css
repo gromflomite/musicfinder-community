@@ -111,6 +111,37 @@ body {
   margin-bottom: 5%; 
 }
 
+.albumDetailsTitle {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 3%;  
+}
+
+.albumDetailsCover {
+  width: 50%;
+  margin-bottom: 4%;  
+}
+
+.albumDetailsSongs {
+  width: 60%
+}
+
+.songlist th {
+  width: 5%;
+}
+
+.songlist td {
+  padding: 3%;
+  font-size: 1.5vw;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.songlisticon {
+  width: 20%;
+  padding: 1%;
+}
+
 /*-------------------------------------------------- */
 
 a.navbar-brand {
