@@ -18,5 +18,7 @@ namespace MFCommunity.Models
         public string? ArtistImage { get; set; }
 
         public string? ArtistBio { get; set; }
+
+        public List<Album> Albums { get; set; }
     }
 }

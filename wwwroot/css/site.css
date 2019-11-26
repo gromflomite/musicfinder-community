@@ -51,8 +51,7 @@ body {
 
 .getallmusic {
   font-size: 3vw;
-  margin-bottom: 6%;
-  
+  margin-bottom: 6%;  
 }
 
 .albumscarousel {  
@@ -68,8 +67,48 @@ body {
 
 .homeaudio p {
   text-align: center;
-  font-size: 2vw;
-  
+  font-size: 2vw;  
+}
+
+.artiscatalog {
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 5%;  
+}
+
+.card-text {
+  display: flex;
+  text-align: center;  
+  justify-content: center;  
+}
+
+.detailsArtistName {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+.detailsArtistImage {
+  width: 50%;
+}
+
+.detailsArtistBio {
+  margin-top: 5%;
+  width: 75%;
+  text-align: justify;
+}
+
+.detailsAlbumsList {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 3%;  
+}
+
+.detailsAlbumsName {
+  font-family: 'Orbitron', sans-serif;
+  margin-left: 5%;
+  margin-bottom: 5%; 
 }
 
 /*-------------------------------------------------- */

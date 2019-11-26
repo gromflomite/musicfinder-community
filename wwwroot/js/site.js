@@ -9,4 +9,4 @@ var wavesurfer = WaveSurfer.create({
     container: '#waveform',
 });
 
-wavesurfer.load('./media/albums/GES%20-%20Maldito/13.mp3');
+wavesurfer.load('./media/sample/sample.mp3');

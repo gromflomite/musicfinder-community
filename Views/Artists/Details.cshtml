@@ -1,0 +1,40 @@
+﻿@model MFCommunity.Models.Artist
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> _signInManager
+@inject UserManager<User> _userManager
+
+@{
+    ViewData["Title"] = @Model.ArtistName;
+}
+
+<h1 class="detailsArtistName">@Model.ArtistName</h1>
+
+<div>
+
+    <img class="detailsArtistImage" src="~/media/artists/@Model.ArtistImage" alt="@Model.ArtistImage image" />
+
+    <h5 class="detailsArtistBio">@Model.ArtistBio</h5>
+
+    <h3 class="detailsAlbumsList">Albums available in MFCommunity</h3>
+
+    @foreach (Album album in Model.Albums)
+    {
+        <h3 class="detailsAlbumsName">@album.AlbumTitle</h3>
+    }
+</div>
+
+@if (_signInManager.IsSignedIn(User))
+{
+
+    // Actions if user is logged but is not admin
+
+
+    User user = await _userManager.GetUserAsync(User);
+
+    if (await _userManager.IsInRoleAsync(user, "admin"))
+    {
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.ID">Edit this artist</a>
+        </div>
+    }
+}
