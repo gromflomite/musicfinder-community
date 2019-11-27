@@ -124,7 +124,7 @@ body {
 }
 
 .albumDetailsSongs {
-  width: 60%
+  padding-left: 5%;
 }
 
 .songlist th {
@@ -184,16 +184,18 @@ body {
 
 .playalbumblock {
   padding-left: 5%;
-  padding-bottom: 5%;    
+  padding-bottom: 5%;
+  
 }
 
 .albumplayicon {
-  width: 6%;
+  width: 4%;
 }
 
 .playalbumtitle {
+  font-size: 1.2vw;
   padding-left: 2%;
-  padding-top: 2%;
+  padding-top: 1%;
   font-family: 'Orbitron', sans-serif;
   color: gold;
 }
