@@ -39,10 +39,10 @@
             {
                 <div class="card" style="width: 11rem;">
                     <a asp-controller="Albums" asp-action="Details" asp-route-id="@album.ID"><img src="~/media/albums/@album.AlbumImage" class="card-img-top" alt="@album.AlbumTitle cover"></a>
-                        <div class="card-body">
-                            <p class="card-text">@album.AlbumTitle</p>
-                        </div>
-</div>
+                    <div class="card-body">
+                        <p class="card-text">@album.AlbumTitle</p>
+                    </div>
+                </div>
             }
         </div>
     </div>
@@ -68,7 +68,7 @@ else
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            
+
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="~/media/albums/@Model.Albums[Model.carousel1].AlbumImage" alt="@Model.Albums[Model.carousel1].AlbumTitle cover">
@@ -80,7 +80,7 @@ else
                     <img class="d-block w-100" src="~/media/albums/@Model.Albums[Model.carousel3].AlbumImage" alt="@Model.Albums[Model.carousel3].AlbumTitle cover">
                 </div>
             </div>
-            
+
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>

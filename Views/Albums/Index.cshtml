@@ -1,65 +1,81 @@
-﻿@model IEnumerable<MFCommunity.Models.Album>
+﻿@model List<MFCommunity.Models.Album>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="col-10 offset-1 artiscatalog">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Artist)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AlbumTitle)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AlbumNumberOfSongs)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AlbumReleaseDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AlbumImage)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AlbumComments)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Artist.ArtistName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AlbumTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AlbumNumberOfSongs)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AlbumReleaseDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AlbumImage)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AlbumComments)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <h2>Albums</h2>
+
+    <div class="row albums">
+        @foreach (Album album in Model)
+        {
+            <div class="card" style="width: 11rem;">
+                <a asp-controller="Albums" asp-action="Details" asp-route-id="@album.ID"><img src="~/media/albums/@album.AlbumImage" class="card-img-top" alt="@album.AlbumTitle cover"></a>
+                <div class="card-body">
+                    <p class="card-text">@album.AlbumTitle</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+@*<p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Artist)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AlbumTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AlbumNumberOfSongs)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AlbumReleaseDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AlbumImage)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AlbumComments)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Artist.ArtistName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AlbumTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AlbumNumberOfSongs)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AlbumReleaseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AlbumImage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AlbumComments)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@

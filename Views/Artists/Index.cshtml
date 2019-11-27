@@ -1,10 +1,28 @@
-﻿@model IEnumerable<MFCommunity.Models.Artist>
+﻿@model List<MFCommunity.Models.Artist>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+    <div class="col-10 offset-1 artiscatalog">
+
+        <h2>Artists</h2>
+
+        <div class="row artists">
+            @foreach (Artist artists in Model)
+            {
+                <div class="card" style="width: 11rem;">
+                    <a asp-controller="Artists" asp-action="Details" asp-route-id="@artists.ID"><img src="~/media/artists/@artists.ArtistImage" class="card-img-top" alt="@artists.ArtistName image"></a>
+                    <div class="card-body">
+                        <p class="card-text">@artists.ArtistName</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+@*<h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -44,4 +62,4 @@
         </tr>
 }
     </tbody>
-</table>
+</table>*@

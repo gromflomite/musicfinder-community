@@ -36,7 +36,10 @@ body {
 }
 
 .patitle {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
   margin-top: 4%;
+  margin-block: 5%;
 }
 
 .covers {
