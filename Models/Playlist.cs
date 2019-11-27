@@ -10,7 +10,7 @@ namespace MFCommunity.Models
         public int ID { get; set; }
 
         // FK -> User
-        //public int UserId { get; set; }
+        public string UserId { get; set; }
         public User User { get; set; }
     }
 }

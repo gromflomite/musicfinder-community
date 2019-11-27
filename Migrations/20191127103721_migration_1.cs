@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MFCommunity.Migrations
 {
-    public partial class migration1 : Migration
+    public partial class migration_1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -218,7 +218,7 @@ namespace MFCommunity.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    SongTitle = table.Column<int>(maxLength: 50, nullable: false),
+                    SongTitle = table.Column<string>(maxLength: 50, nullable: false),
                     AlbumID = table.Column<int>(nullable: false),
                     SongComments = table.Column<string>(nullable: true)
                 },
@@ -239,7 +239,7 @@ namespace MFCommunity.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<string>(nullable: true),
+                    UserID = table.Column<string>(nullable: true),
                     SongID = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -252,8 +252,8 @@ namespace MFCommunity.Migrations
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_FavouriteSongs_AspNetUsers_UserId",
-                        column: x => x.UserId,
+                        name: "FK_FavouriteSongs_AspNetUsers_UserID",
+                        column: x => x.UserID,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -335,9 +335,9 @@ namespace MFCommunity.Migrations
                 column: "SongID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_FavouriteSongs_UserId",
+                name: "IX_FavouriteSongs_UserID",
                 table: "FavouriteSongs",
-                column: "UserId");
+                column: "UserID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Playlists_UserId",

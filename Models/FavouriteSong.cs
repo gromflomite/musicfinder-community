@@ -11,7 +11,7 @@ namespace MFCommunity.Models
 
         // FK -> User
        public User User { get; set; }
-       //public int UserID { get; set; }
+       public string UserID { get; set; }
 
         // FK -> Song
         public int SongID { get; set; }

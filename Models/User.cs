@@ -15,5 +15,7 @@ namespace MFCommunity.Models
 
         [MaxLength(50)]
         public string? UserImage { get; set; }
+
+        public List<FavouriteSong> favouriteSongs { get; set; }
     }
 }

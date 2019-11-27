@@ -128,18 +128,24 @@ body {
 }
 
 .songlist th {
-  width: 5%;
+  width: 65%;
 }
 
 .songlist td {
   padding: 3%;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-family: 'Orbitron', sans-serif;
 }
 
 .songlisticon {
   width: 20%;
   padding: 1%;
+}
+
+.tracksalbum {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  padding-bottom: 1%;
 }
 
 /*-------------------------------------------------- */

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MFCommunity.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191121150840_migration2")]
-    partial class migration2
+    [Migration("20191127103721_migration_1")]
+    partial class migration_1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -91,14 +91,14 @@ namespace MFCommunity.Migrations
                     b.Property<int>("SongID")
                         .HasColumnType("int");
 
-                    b.Property<string>("UserId")
+                    b.Property<string>("UserID")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("ID");
 
                     b.HasIndex("SongID");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserID");
 
                     b.ToTable("FavouriteSongs");
                 });
@@ -379,7 +379,7 @@ namespace MFCommunity.Migrations
             modelBuilder.Entity("MFCommunity.Models.Album", b =>
                 {
                     b.HasOne("MFCommunity.Models.Artist", "Artist")
-                        .WithMany()
+                        .WithMany("Albums")
                         .HasForeignKey("ArtistID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -388,14 +388,14 @@ namespace MFCommunity.Migrations
             modelBuilder.Entity("MFCommunity.Models.FavouriteSong", b =>
                 {
                     b.HasOne("MFCommunity.Models.Song", "Song")
-                        .WithMany()
+                        .WithMany("favouriteSongs")
                         .HasForeignKey("SongID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("MFCommunity.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
+                        .WithMany("favouriteSongs")
+                        .HasForeignKey("UserID");
                 });
 
             modelBuilder.Entity("MFCommunity.Models.Playlist", b =>
@@ -423,7 +423,7 @@ namespace MFCommunity.Migrations
             modelBuilder.Entity("MFCommunity.Models.Song", b =>
                 {
                     b.HasOne("MFCommunity.Models.Album", "Album")
-                        .WithMany()
+                        .WithMany("Songs")
                         .HasForeignKey("AlbumID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

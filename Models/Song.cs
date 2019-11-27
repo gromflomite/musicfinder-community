@@ -20,8 +20,6 @@ namespace MFCommunity.Models
 
         public string? SongComments { get; set; }
 
-
-
-
+        public List<FavouriteSong> favouriteSongs { get; set; }
     }
 }
