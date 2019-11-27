@@ -15,6 +15,6 @@ namespace MFCommunity.Models
 
         // FK -> Song
         public int SongID { get; set; }
-        public Song Song { get; set; }
+        public Song Song { get; set; }    
     }
 }

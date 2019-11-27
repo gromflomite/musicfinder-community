@@ -13,7 +13,16 @@
 
     <img class="albumDetailsCover" src="~/media/albums/@Model.AlbumImage" alt="@Model.AlbumTitle cover" />
 
-    <h3 class="tracksalbum">Tracks in the album</h3>
+    <br />
+
+    <div class="row playalbumblock">
+        <img class="albumplayicon" src="~/images/playalbum.svg" alt="Alternate Text" />
+        <h4 class="playalbumtitle">Play album</h4>
+    </div>
+    
+    
+
+    <h3 class="tracksalbum">Tracks in the album</h3>    
 
     <div class="albumDetailsSongs">
         <table class="songlist">
@@ -26,7 +35,9 @@
             {
                 <tr>
                     <td>@song.SongTitle</td>
-                    <td><img class="songlisticon" src="~/images/play.svg" alt="Alternate Text" /><img class="songlisticon" src="~/images/download.svg" alt="Alternate Text" /><img class="songlisticon" src="~/images/favourite.svg" alt="Alternate Text" /></td>
+                    <td><img class="songlisticon" src="~/images/play.svg" alt="" /><img class="songlisticon" src="~/images/download.svg" alt="" /><a asp-controller="FavouriteSongs" asp-action="saveFavSong" asp-route-SongID="@song.ID"><img class="songlisticon" src="~/images/favourite.svg" title="Add to favourites"/></a></td>
+                    
+                
                 </tr>
 
             }
