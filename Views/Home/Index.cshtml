@@ -4,7 +4,7 @@
 @model MFCommunity.Models.ViewModels.HomeVM
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Welcome";
 }
 
 @if (_signInManager.IsSignedIn(User))
@@ -92,8 +92,12 @@ else
         </div>
 
         <div class="homeaudio">
-            <p class="todaysong">Song of the day</p>
-            <div id="waveform">
+            <div class="recommendation">
+                <p id="todaysong">Our recommendation for today</p>
+                
+            </div>
+            <div id="waveformindex">
+                <p id="recommendationartist">Janis Joplin - Anthology</p>
                 <div class="controls">
                     <button class="badge badge-pill badge-success" onclick="wavesurfer.playPause()">
                         <i class="fa fa-play"></i>
@@ -107,6 +111,7 @@ else
                         <i class="fa fa-volume-off"></i>
                         Mute
                     </button>
+                    
                 </div>
             </div>
         </div>

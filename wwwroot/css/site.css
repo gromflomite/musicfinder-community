@@ -21,6 +21,14 @@ body {
 
 .logintitles {
   margin-top: 4%;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+.registertitle {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  
 }
 
 #forgot-password {
@@ -32,6 +40,8 @@ body {
 }
 
 .fptitles {
+  font-family: 'Orbitron', sans-serif;
+  color: white;  
   margin-top: 4%;
 }
 
@@ -62,6 +72,26 @@ body {
   margin: auto;  
   border: 1px solid white;  
 }
+
+.recommendation {
+  color: white;  
+}
+
+#todaysong {
+  text-align: left;
+}
+
+.recommendationartist {
+  color: goldenrod;  
+}
+
+#recommendationartist {
+  color: goldenrod;
+  font-size: 1.5vw;
+  text-align: revert;
+  padding-top: 2%;
+}
+
 
 .homeaudio {
   margin-top: 5%;
@@ -225,13 +255,18 @@ body {
   right: 5%;
 }
 
+#player {
+  display: none;
+}
+
+
+
 /*-------------------------------------------------- */
 
 a.navbar-brand {
   white-space: normal;
   text-align: center;
-  word-break: break-all;
-  
+  word-break: break-all;  
 }
 
 /* Provide sufficient contrast against white background */

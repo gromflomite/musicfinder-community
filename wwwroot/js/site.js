@@ -1,16 +1,7 @@
 ﻿function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-} 
+    document.getElementById('player').style.display = "initial";
+}
 
-
-
-
-// Wavesurfer block -----------------------------------------------------------------------------------------------------------------------
 
 // Create a WaveSurfer instance
 var wavesurfer;
@@ -66,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Play on audio load
     wavesurfer.on('ready', function () {
-        wavesurfer.play();
+        //wavesurfer.play();
     });
 
     wavesurfer.on('error', function (e) {
@@ -82,4 +73,18 @@ document.addEventListener('DOMContentLoaded', function () {
     setCurrentSong(currentTrack);
 });
 
-// End Wavesurfer block -----------------------------------------------------------------------------------------------------------------------
+    // End Wavesurfer block -----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+var wavesurfer = WaveSurfer.create({
+    container: '#waveformindex',
+    waveColor: 'violet',
+    progressColor: 'purple'
+});
+
+wavesurfer.load('./media/sample/sample.mp3');

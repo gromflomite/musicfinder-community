@@ -18,7 +18,7 @@
     <br />
 
     <div class="row playalbumblock">
-        <img class="albumplayicon" src="~/images/playalbum.svg" alt="Alternate Text" />
+        <img class="albumplayicon" onclick="myFunction()" src="~/images/playalbum.svg" alt="Alternate Text" />
         <h4 class="playalbumtitle">Play album</h4>
     </div>
 
@@ -36,41 +36,44 @@
             {
                 <tr>
                     <td>@song.SongTitle</td>
-                    <td><img class="songlisticon" src="~/images/play.svg" alt="" /><img class="songlisticon" src="~/images/download.svg" alt="" /><a asp-controller="FavouriteSongs" asp-action="saveFavSong" asp-route-SongID="@song.ID"><img class="songlisticon" src="~/images/favourite.svg" title="Add to favourites" /></a></td>
+                    <td><a href=~/media/albums/@song.SongUrl target="_blank"><img class="songlisticon" src="~/images/play.svg" title="Play track" /></a><a href=~/media/albums/@song.SongUrl target="_blank"><img class="songlisticon" src="~/images/download.svg" title="Download" /></a><a asp-controller="FavouriteSongs" asp-action="saveFavSong" asp-route-SongID="@song.ID"><img class="songlisticon" src="~/images/favourite.svg" title="Add to favourites" /></a></td>
                 </tr>
             }
         </table>
     </div>
 </div>
 
-<div id="waveform">
+<div id="player">
+    <div id="waveform">
 
-    <h3>MFC Player</h3>
-    <!-- Here be waveform -->
-</div>
+        <h3>MFC Player</h3>
+        <!-- Here be waveform -->
+    </div>
 
-<div class="col-sm-2 playerbuttons">
-    <button class="btn btn-success btn-block" id="playPause">
-        <span id="play">
-            <i class="glyphicon glyphicon-play"></i>
-            Play
-        </span>
+    <div class="col-sm-2 playerbuttons">
+        <button class="btn btn-success btn-block" id="playPause">
+            <span id="play">
+                <i class="glyphicon glyphicon-play"></i>
+                Play
+            </span>
 
-        <span id="pause" style="display: none">
-            <i class="glyphicon glyphicon-pause"></i>
-            Pause
-        </span>
-    </button>
-</div>
+            <span id="pause" style="display: none">
+                <i class="glyphicon glyphicon-pause"></i>
+                Pause
+            </span>
+        </button>
+    </div>
 
-<div class="list-group" id="playlist">
-    @foreach (Song song in Model.Songs)
-    {
-        <a href=~/media/albums/@song.SongUrl class="list-group-item">
-            <i class="glyphicon glyphicon-play"></i>
-            @song.SongTitle <span class="playlistdetails">Artist: @Model.Artist.ArtistName - Album: @Model.AlbumTitle</span>
-        </a>
-    }
+    <div class="list-group" id="playlist">
+        @foreach (Song song in Model.Songs)
+        {
+            <a href=~/media/albums/@song.SongUrl class="list-group-item">
+                <i class="glyphicon glyphicon-play"></i>
+                @song.SongTitle <span class="playlistdetails">Artist: @Model.Artist.ArtistName - Album: @Model.AlbumTitle</span>
+            </a>
+        }
+    </div>
+
 </div>
 
 @*<div>
