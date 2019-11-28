@@ -1,342 +1,345 @@
-/* Personal
--------------------------------------------------- */
+/* Personal -------------------------------------------------- */
 
 body {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title {
-  font-family: 'Monoton', cursive;
-  margin-top: 3%;
-  color: white;
+    font-family: 'Monoton', cursive;
+    margin-top: 3%;
+    color: white;
 }
 
 .navbar {
-  font-family: 'Orbitron', sans-serif;  
+    font-family: 'Orbitron', sans-serif;
 }
 
 .mandatory {
-  color: green;
+    color: green;
 }
 
 .logintitles {
-  margin-top: 4%;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
+    margin-top: 4%;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
 }
 
 .registertitle {
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  
+    font-family: 'Orbitron', sans-serif;
+    color: white;
 }
 
 #forgot-password {
-  color: green;
+    color: green;
 }
 
 .logo {
-  font-family: 'Monoton', cursive;
+    font-family: 'Monoton', cursive;
 }
 
 .fptitles {
-  font-family: 'Orbitron', sans-serif;
-  color: white;  
-  margin-top: 4%;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-top: 4%;
 }
 
 .patitle {
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  margin-top: 4%;
-  margin-block: 5%;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-top: 4%;
+    margin-block: 5%;
 }
 
 .covers {
-  max-width: 25%
+    max-width: 25%
 }
 
 .upcarousel {
-  text-align: center;
-  margin-top: 5%;  
-  font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .getallmusic {
-  font-size: 3vw;
-  margin-bottom: 6%;  
+    font-size: 3vw;
+    margin-bottom: 6%;
 }
 
-.albumscarousel {  
-  width: 50%;
-  margin: auto;  
-  border: 1px solid white;  
+.albumscarousel {
+    width: 50%;
+    margin: auto;
+    border: 1px solid white;
 }
 
 .recommendation {
-  color: white;  
+    color: white;
 }
 
 #todaysong {
-  text-align: left;
+    text-align: left;
 }
 
 .recommendationartist {
-  color: goldenrod;  
+    color: goldenrod;
 }
 
 #recommendationartist {
-  color: goldenrod;
-  font-size: 1.5vw;
-  text-align: revert;
-  padding-top: 2%;
+    color: goldenrod;
+    font-size: 1.5vw;
+    text-align: revert;
+    padding-top: 2%;
 }
 
-
 .homeaudio {
-  margin-top: 5%;
-  font-family: 'Orbitron', sans-serif;  
+    margin-top: 5%;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .homeaudio p {
-  text-align: center;
-  font-size: 2vw;  
+    text-align: center;
+    font-size: 2vw;
 }
 
 .artiscatalog {
-  font-family: 'Orbitron', sans-serif;
-  margin-top: 5%;  
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 5%;
 }
 
 .card-text {
-  display: flex;
-  text-align: center;  
-  justify-content: center;  
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .detailsArtistName {
-  margin-top: 5%;
-  margin-bottom: 2%;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
 }
 
 .detailsArtistImage {
-  width: 50%;
+    width: 50%;
 }
 
 .detailsArtistBio {
-  margin-top: 5%;
-  width: 75%;
-  text-align: justify;
+    margin-top: 5%;
+    width: 75%;
+    text-align: justify;
 }
 
 .detailsAlbumsList {
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  margin-top: 5%;
-  margin-bottom: 3%;  
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
 .detailsAlbumsName {
-  font-family: 'Orbitron', sans-serif;
-  margin-left: 5%;
-  margin-bottom: 5%; 
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .albumDetailsTitle {
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  margin-top: 5%;
-  margin-bottom: 3%;  
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
 .albumDetailsCover {
-  width: 50%;
-  margin-bottom: 4%;  
+    width: 50%;
+    margin-bottom: 4%;
 }
 
 .albumDetailsSongs {
-  padding-left: 5%;
+    padding-left: 5%;
 }
 
 .songlist th {
-  width: 65%;
+    width: 65%;
 }
 
 .songlist td {
-  padding: 3%;
-  font-size: 1.3vw;
-  font-family: 'Orbitron', sans-serif;
+    padding: 3%;
+    font-size: 1.3vw;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .songlisticon {
-  width: 20%;
-  padding: 1%;
+    width: 20%;
+    padding: 1%;
 }
 
 .tracksalbum {
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  padding-bottom: 1%;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    padding-bottom: 1%;
 }
 
 .deleteicon {
-  width: 5%
+    width: 5%
 }
 
 .removeicon {
-  width: 100%;
+    width: 100%;
 }
 
 .favsongstitle {
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  margin-top: 3%;
-  margin-bottom: 5%;    
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 .favsongstable th {
-  font-family: 'Orbitron', sans-serif;
-  color: white;  
+    font-family: 'Orbitron', sans-serif;
+    color: white;
 }
 
 .removesongtitle {
-  margin-top: 3%;
-  font-family: 'Orbitron', sans-serif;
-  color: white;  
+    margin-top: 3%;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
 }
 
 .removesong {
-  font-size: 1.5vw;  
+    font-size: 1.5vw;
 }
 
 .removesongbuttons {
-  padding:1%;
+    padding: 1%;
 }
 
 .playalbumblock {
-  padding-left: 5%;
-  padding-bottom: 5%;
-  
+    padding-left: 5%;
+    padding-bottom: 5%;
 }
 
 .albumplayicon {
-  width: 4%;
+    width: 4%;
 }
 
 .playalbumtitle {
-  font-size: 1.2vw;
-  padding-left: 2%;
-  padding-top: 1%;
-  font-family: 'Orbitron', sans-serif;
-  color: gold;
+    font-size: 1.2vw;
+    padding-left: 2%;
+    padding-top: 1%;
+    font-family: 'Orbitron', sans-serif;
+    color: gold;
 }
 
 .playerbuttons {
-  padding-bottom: 2%;
-  padding-top: 2%;
-  font-family: 'Orbitron', sans-serif;  
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #waveform {
-  padding-top: 5%;
-  font-family: 'Orbitron', sans-serif;
-   color: goldenrod;
+    padding-top: 5%;
+    font-family: 'Orbitron', sans-serif;
+    color: goldenrod;
 }
 
-#playlist {  
-  font-family: 'Orbitron', sans-serif; 
+#playlist {
+    font-family: 'Orbitron', sans-serif;
 }
 
 .playlistdetails {
-  color: goldenrod;
-  position: absolute;
-  right: 5%;
+    color: goldenrod;
+    position: absolute;
+    right: 5%;
 }
 
 #player {
-  display: none;
+    display: none;
 }
 
 
-
-/*-------------------------------------------------- */
+/* End personal -------------------------------------------------- */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;  
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
+
 /* Provide sufficient contrast against white background */
+
 a {
-  color: #0366d6;
+    color: #0366d6;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: white;
-  background-color: goldenrod;
-  border-color: #1861ac;
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: white;
+    background-color: goldenrod;
+    border-color: #1861ac;
 }
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 .registertitle {
-  margin-top: 4%;
+    margin-top: 4%;
 }
-
 
 
 /* Sticky footer styles
 -------------------------------------------------- */
+
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
+
 .footer {
-  font-family: 'Orbitron', sans-serif;  
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 200%; /* Vertically center the text there */
-  text-align: center;
-  
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 200%;
+    /* Vertically center the text there */
+    text-align: center;
 }
