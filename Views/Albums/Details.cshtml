@@ -22,8 +22,6 @@
         <h4 class="playalbumtitle">Play album</h4>
     </div>
 
-
-
     <div class="albumDetailsSongs">
 
         <h3 class="tracksalbum">Tracks in the album</h3>
@@ -45,7 +43,40 @@
     </div>
 </div>
 
+<div id="waveform">
+
+    <h3>MFC Player</h3>
+    <!-- Here be waveform -->
+</div>
+
+<div class="col-sm-2 playerbuttons">
+    <button class="btn btn-success btn-block" id="playPause">
+        <span id="play">
+            <i class="glyphicon glyphicon-play"></i>
+            Play
+        </span>
+
+        <span id="pause" style="display: none">
+            <i class="glyphicon glyphicon-pause"></i>
+            Pause
+        </span>
+    </button>
+</div>
+
+<div class="list-group" id="playlist">
+    @foreach (Song song in Model.Songs)
+    {
+        <a href=~/media/albums/@song.SongUrl class="list-group-item">
+            <i class="glyphicon glyphicon-play"></i>
+            @song.SongTitle <span class="playlistdetails">Artist: @Model.Artist.ArtistName - Album: @Model.AlbumTitle</span>
+        </a>
+    }
+</div>
+
 @*<div>
         <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
         <a asp-action="Index">Back to List</a>
-    </div>*@
+    </div>*@<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID"></a>
+    <a asp-action="Index"></a>
+</div>

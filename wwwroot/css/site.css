@@ -203,6 +203,27 @@ body {
   color: gold;
 }
 
+.playerbuttons {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  font-family: 'Orbitron', sans-serif;  
+}
+
+#waveform {
+  padding-top: 5%;
+  font-family: 'Orbitron', sans-serif;
+   color: goldenrod;
+}
+
+#playlist {  
+  font-family: 'Orbitron', sans-serif; 
+}
+
+.playlistdetails {
+  color: goldenrod;
+  position: absolute;
+  right: 5%;
+}
 
 /*-------------------------------------------------- */
 

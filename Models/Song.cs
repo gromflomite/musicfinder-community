@@ -14,6 +14,8 @@ namespace MFCommunity.Models
         [Required]
         public string SongTitle { get; set; }
 
+        public string? SongUrl { get; set; }
+
         // Foreign key -> Album.
         public int AlbumID { get; set; }
         public Album Album { get; set; }

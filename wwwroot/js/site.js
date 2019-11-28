@@ -1,17 +1,16 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
-
-
-//var wavesurfer = WaveSurfer.create({
-//    container: '#waveform',
-//});
-
-//wavesurfer.load('./media/sample/sample.mp3');
+﻿function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+} 
 
 
+
+
+// Wavesurfer block -----------------------------------------------------------------------------------------------------------------------
 
 // Create a WaveSurfer instance
 var wavesurfer;
@@ -23,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
         waveColor: '#428bca',
         progressColor: '#31708f',
         height: 120,
-        barWidth: 3
+        barWidth: 3,
+        barRadius: 3,
     });
 });
 
@@ -81,3 +81,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load the first track
     setCurrentSong(currentTrack);
 });
+
+// End Wavesurfer block -----------------------------------------------------------------------------------------------------------------------
